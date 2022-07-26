@@ -21,27 +21,22 @@ light intensity. If the incident light intensity is high, the resistance reduces
 ![image](https://user-images.githubusercontent.com/108034996/181043925-5886c782-5fa6-4226-8edf-f9fe129264ad.png)
 
 
+Step 1: Connect circuit as shown in the next diagram: 
+Step 2: Write the code. 
+Step 3: Verify and Compile the code. 
+Step 4: Burn or upload the program into Arduino Uno board.
+
+![image](https://user-images.githubusercontent.com/108034996/181047834-068bac8d-bec1-4a13-a9bd-db5714934120.png)
+
+
 
 
 Code:
 
 
-int piezoPin = 8; 
-int ldrPin = A0; 
-int ldrValue = 0; 
-void setup()
-{
- pinMode(ldrPin, INPUT); 
- pinMode(piezoPin, OUTPUT); 
- }
-void loop()
-{
-ldrValue = analogRead(ldrPin);
- if(ldrValue >= 400)
-tone(piezoPin,300);
-else {
-noTone(piezoPin);
-}}
+![image](https://user-images.githubusercontent.com/108034996/181048040-072caba4-e985-4bde-a022-930e938ec949.png)
+
+
 
 
 The result:
